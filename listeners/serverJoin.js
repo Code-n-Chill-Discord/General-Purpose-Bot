@@ -16,7 +16,9 @@ new Listener({
 
       const embed = new EmbedBuilder()
         .setTitle(`Welcome to ${ctx.guild.name}!`)
-        .setDescription(`Good to see you ${ctx.user}!`)
+        .setDescription(
+          `Good to see you ${ctx.user} (aka ${ctx.user.globalName})!`
+        )
         .setImage("attachment://banner.png")
         .setColor("#6488ea")
         .setTimestamp();
